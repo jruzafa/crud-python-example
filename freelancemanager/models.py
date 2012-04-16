@@ -6,7 +6,7 @@ class User(models.Model):
 	email = models.CharField(max_length=100)
 	password = models.CharField(max_length=100)
 
-class Client(models.Model):
+class Customer(models.Model):
 	name = models.CharField(max_length=100)
 	website = models.CharField(max_length=100)
 	email = models.CharField(max_length=100)
@@ -18,5 +18,5 @@ class Work(models.Model):
 	init_date = models.DateTimeField()
 	finish_date = models.DateTimeField()
 	paid = models.BooleanField()
-	client = models.ForeignKey(Client)
+	customer = models.ForeignKey(Customer)
 	user = models.ForeignKey(User)
