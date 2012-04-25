@@ -8,7 +8,7 @@ class UserAdmin(admin.ModelAdmin):
 
 class CustomerAdmin(admin.ModelAdmin):
     # ...
-    list_display = ('name','email')
+    list_display = ('name','website')
    
 
 class WorkAdmin(admin.ModelAdmin):
