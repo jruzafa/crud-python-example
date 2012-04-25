@@ -1,0 +1,9 @@
+{% if all_works %}
+	<ul>
+		{% for work in all_works %}	
+			<li><a href="/works/{{ work.id }}">{{ work.name }}</a></li>
+		{% endfor %}
+	</ul>
+{% else %}
+	<p>No results from works</p>
+{% endif %}
